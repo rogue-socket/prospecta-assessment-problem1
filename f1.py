@@ -7,6 +7,7 @@ app = Flask(__name__)
 def home():
     return "Hello, World!"
 
+# =========================  Task 1 ========================= 
 @app.route('/products/<cat>', methods=['GET'])
 def get_category(cat):
     api_url = f"https://fakestoreapi.com/products/category/{cat}"
@@ -26,7 +27,7 @@ def get_category(cat):
     except Exception as e:
         return jsonify({"error" : str(e)}), 500
 
-
+# ========================= Task 2 ========================= 
 @app.route('/add-product', methods=['POST'])
 def add_product():
     product_data = request.get_json()

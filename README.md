@@ -52,6 +52,12 @@ The server will start on `http://localhost:5000`
    ```
    - Response: Returns the created product with an ID
 
+## Screenshots of work
+1. **Task 1:**
+![Category API Response](./screenshots/task1_get_category.png)
+2. **Task 2:**
+![Category API Response](./screenshots/task2_post_add_item.png)
+
 ## Error Handling
 
 The API includes error handling for:
